@@ -1,0 +1,10 @@
+pages\Productpage.class
+utils\ExcelReader.class
+pages\Homepage.class
+uistore\HomePageUi.class
+utils\Screenshot.class
+utils\Base.class
+utils\PropertyReader.class
+utils\ExtentReporter.class
+runner\TestRunner.class
+utils\WebDriverHelper.class

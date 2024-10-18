@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Netmeds Homepage suite">
+    <test name="Homepage Tests">
+        <classes>
+            <class name="runner.TestRunner" />
+        </classes>
+    </test>
+</suite>
+
+<!-- <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Netmeds Homepage suite">
+    <test name="Homepage Tests">
+        <classes>
+            <class name="pages.Homepage" />
+        </classes>
+    </test>
+</suite> -->
