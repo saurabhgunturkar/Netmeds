@@ -130,7 +130,7 @@ public class HomePageUi {
 
 
 
-    public By healthCorner = By.className(".b-app1");
+    public By healthCorner = By.xpath("//a[text()=' Health Corner']");
         public By healthLibrary = By.xpath("//a[text()='Health Library']");
         public By allAboutCancers = By.xpath("//a[text()='All About Cancers']");
         public By coronaAwareness = By.xpath("//a[text()='Corona Awareness']");

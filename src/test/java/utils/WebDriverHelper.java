@@ -357,6 +357,11 @@ public class WebDriverHelper {
         }
     }
 
+    public void jsScrollAtTheTop(){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollTo(0, 0);");
+    }
+
     public void getLocationOfWebElement(By locator){
         try {
             webElement = driver.findElement(locator);

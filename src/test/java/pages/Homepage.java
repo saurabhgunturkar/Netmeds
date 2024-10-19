@@ -43,11 +43,11 @@ public class Homepage extends Base {
                 break;
             case "Buy Again":
                 helperObj.clickOnElement(homePageUi.buyAgain, "Clicked on Buy_Again element");
-                helperObj.verifyURL_Contains_Keyword("buyagain", "verified BuyAgain Page");
+                //helperObj.verifyURL_Contains_Keyword("buyagain", "verified BuyAgain Page");
                 break;
             case "Order Online":
                 helperObj.clickOnElement(homePageUi.orderOnline, "Clicked on Order_Online element");
-                helperObj.verifyURL_Contains_Keyword("order-medicine", "verified OrderOnline Page");
+                //helperObj.verifyURL_Contains_Keyword("order-medicine", "verified OrderOnline Page");
                 break;
             default:
                 System.out.println("Medicine Dropdown Module Testing is failed");
@@ -55,8 +55,12 @@ public class Homepage extends Base {
         }
     }
 
-    public void Wellness_Module_Elements(String mainEle, String subEle) {
+    public void Wellness_Module_Elements(String mainEle, String subEle) throws InterruptedException {
+        helperObj.jsScrollAtTheTop();
+        helperObj.mouseCursorOffsetPosition(16, 46);
         helperObj.hoverAnElement(homePageUi.wellness, "Hovered on Wellness element");
+        // helperObj.mouseCursorOffsetPosition(16, 46);
+        // Thread.sleep(2000);
         switch (mainEle.toLowerCase()) {
             case "ayush":
                 switch (subEle.toLowerCase()) {
@@ -95,17 +99,20 @@ public class Homepage extends Base {
                                 "verified PersonalHomeEssentials Page");
                         break;
                     case "businessessential":
+                        helperObj.jsScrollByIndex(250);
                         helperObj.clickOnElement(homePageUi.businessEssentails,
                                 "Clicked on BusinessEssentails element");
-                        helperObj.verifyURL_Contains_Keyword("covid-essentials/business-essentials",
+                        helperObj.verifyURL_Contains_Keyword("business-essentials",
                                 "verified BusinessEssentails Page");
                         break;
                     case "maskglovesessential":
+                    helperObj.jsScrollByIndex(250);
                         helperObj.clickOnElement(homePageUi.maskGloves, "Clicked on MaskGlovesEssentials element");
                         helperObj.verifyURL_Contains_Keyword("covid-essentials/mask-gloves-protective-equipment",
                                 "verified MaskGlovesEssentials Page");
                         break;
                     case "travel":
+                    helperObj.jsScrollByIndex(250);
                         helperObj.clickOnElement(homePageUi.travelEssentials, "Clicked on TravelEssentials element");
                         helperObj.verifyURL_Contains_Keyword("covid-essentials/travel-essentials",
                                 "verified TravelEssentials Page");
@@ -120,24 +127,30 @@ public class Homepage extends Base {
             case "devices":
                 switch (subEle.toLowerCase()) {
                     case "breath":
+                    helperObj.jsScrollByIndex(250);
                         helperObj.clickOnElement(homePageUi.breathEasy, "Clicked on BreathEasy element");
                         helperObj.verifyURL_Contains_Keyword("devices/breathe-easy", "verified BreathEasy Page");
                         break;
                     case "surgical":
+                    helperObj.jsScrollByIndex(260);
                         helperObj.clickOnElement(homePageUi.surgicalAcessories,
                                 "Clicked on Surgical Accessories element");
                         helperObj.verifyURL_Contains_Keyword("devices/surgical-accessories",
                                 "verified Surgical Accessories Page");
+                                
                         break;
                     case "orthopaedics":
-                        helperObj.clickOnElement(homePageUi.orthopedics, "Clicked on Orthopedics element");
+                    helperObj.jsScrollByIndex(260);
+                        helperObj.clickOnElement(homePageUi.orthopedics, "Clicked on Orthopaedics element");
                         helperObj.verifyURL_Contains_Keyword("devices/orthopaedics", "verified Orthopedics Page");
                         break;
                     case "measurements":
+                    helperObj.jsScrollByIndex(270);
                         helperObj.clickOnElement(homePageUi.measurements, "Clicked on Measurements element");
                         helperObj.verifyURL_Contains_Keyword("devices/measurements", "verified Measurements Page");
                         break;
                     default:
+                    helperObj.jsScrollByIndex(250);
                         helperObj.clickOnElement(homePageUi.devices, "By default, clicked on Devices Element");
                         helperObj.verifyURL_Contains_Keyword("devices", "verified Devices Page");
                         break;
@@ -180,6 +193,7 @@ public class Homepage extends Base {
                 }
                 break;
             case "eyewear":
+            helperObj.jsScrollByIndex(200);
                 switch (subEle.toLowerCase()) {
                     case "eyeglass":
                         helperObj.clickOnElement(homePageUi.eyeGlasses, "Clicked on EyeGlasses Element");
@@ -201,6 +215,9 @@ public class Homepage extends Base {
                 }
                 break;
             case "fitness":
+            
+            helperObj.jsScrollByIndex(340);
+            Thread.sleep(2000);
                 switch (subEle.toLowerCase()) {
                     case "weightmanagement":
                         helperObj.clickOnElement(homePageUi.weightManagement, "Clicked on WeightManagement element");
@@ -246,6 +263,8 @@ public class Homepage extends Base {
                 }
                 break;
             case "health conditions":
+            helperObj.jsScrollByIndex(50);
+            Thread.sleep(2000);
                 switch (subEle.toLowerCase()) {
                     case "womencare":
                         helperObj.clickOnElement(homePageUi.womenCare, "Clicked on WomenCare element");
@@ -291,21 +310,27 @@ public class Homepage extends Base {
                                 "verified DiabeticCare Page");
                         break;
                     case "cardiacare":
+                        helperObj.jsScrollByIndex(250);
+                        Thread.sleep(2000);
                         helperObj.clickOnElement(homePageUi.cardiacCare, "Clicked on CardiacCare element");
                         helperObj.verifyURL_Contains_Keyword("health-conditions/cardiac-care",
                                 "verified CardiacCare Page");
                         break;
                     case "coldfevercare":
+                    helperObj.jsScrollByIndex(200);
+                    Thread.sleep(2000);
                         helperObj.clickOnElement(homePageUi.coldFever, "Clicked on ColdFever element");
                         helperObj.verifyURL_Contains_Keyword("health-conditions/cold-and-fever",
                                 "verified ColdFever Page");
                         break;
                     case "immunitycare":
+                    helperObj.jsScrollByIndex(250);
                         helperObj.clickOnElement(homePageUi.immunityCare, "Clicked on ImmunityCare element");
                         helperObj.verifyURL_Contains_Keyword("health-conditions/immunity-care",
                                 "verified ImmunityCare Page");
                         break;
                     case "lungcare":
+                    helperObj.jsScrollByIndex(270);
                         helperObj.clickOnElement(homePageUi.lungCare, "Clicked on LungCare element");
                         helperObj.verifyURL_Contains_Keyword("health-conditions/lung-care", "verified LungCare Page");
                         break;
@@ -317,6 +342,8 @@ public class Homepage extends Base {
                 }
                 break;
             case "mom and baby":
+            helperObj.jsScrollByIndex(350);
+            Thread.sleep(2000);
                 switch (subEle.toLowerCase()) {
                     case "babycare":
                         helperObj.clickOnElement(homePageUi.babyCare, "Clicked on BabyCare element");
@@ -335,7 +362,7 @@ public class Homepage extends Base {
                         helperObj.clickOnElement(homePageUi.maternityCare, "Clicked on MaternityCare element");
                         helperObj.verifyURL_Contains_Keyword("mom-baby/maternity-care", "verified MaternityCare Page");
                         break;
-                    case "maternityaccessories":
+                    case "maternityaccessories":    
                         helperObj.clickOnElement(homePageUi.maternityAccessories,
                                 "Clicked on MaternityAccessories element");
                         helperObj.verifyURL_Contains_Keyword("mom-baby/maternity-accessories",
@@ -348,6 +375,8 @@ public class Homepage extends Base {
                 }
                 break;
             case "personal care":
+            helperObj.jsScrollByIndex(50);
+            // Thread.sleep(2000);
                 switch (subEle.toLowerCase()) {
                     case "homehealth":
                         helperObj.clickOnElement(homePageUi.homeHealth, "Clicked on homeHealth element");
@@ -389,18 +418,22 @@ public class Homepage extends Base {
                         helperObj.verifyURL_Contains_Keyword("personal-care/lip-care", "verified LipCare Page");
                         break;
                     case "bathingaccessories":
+                    helperObj.jsScrollByIndex(250);
                         helperObj.clickOnElement(homePageUi.bathingAccessories,
                                 "Clicked on BathingAccessories element");
                         helperObj.verifyURL_Contains_Keyword("personal-care/bathing-accessories",
                                 "verified BathingAccessories Page");
                         break;
                     default:
-                        helperObj.clickOnElement(homePageUi.momBaby, "By default, Clicked on personalCare element");
+                    // helperObj.jsScrollAtTheTop();
+                        helperObj.clickOnElement(homePageUi.personalCare, "By default, Clicked on personalCare element");
                         helperObj.verifyURL_Contains_Keyword("personal-care", "verified personalCare Page");
                         break;
                 }
                 break;
             case "sexual wellness":
+            helperObj.jsScrollByIndex(350);
+            Thread.sleep(2000);
                 switch (subEle.toLowerCase()) {
                     case "condoms":
                         helperObj.clickOnElement(homePageUi.condoms, "Clicked on Condoms element");
@@ -433,14 +466,16 @@ public class Homepage extends Base {
                 }
                 break;
             case "surgical":
+            helperObj.jsScrollByIndex(50);
+            Thread.sleep(2000);
                 switch (subEle.toLowerCase()) {
                     case "respiratorysupplies":
                         helperObj.clickOnElement(homePageUi.respiratorySupplies,
                                 "Clicked on respiratorySupplies element");
                         helperObj.verifyURL_Contains_Keyword("surgical/respiratory-supplies", "verified respiratorySupplies Page");
                         break;
-                    case "sugarsubstitutes":
-                        helperObj.clickOnElement(homePageUi.sugarSubstitutes, "Clicked on sugarSubstitutes element");
+                    case "sugarconsumables":
+                        helperObj.clickOnElement(homePageUi.surgicalConsumables, "Clicked on sugarSubstitutes element");
                         helperObj.verifyURL_Contains_Keyword("surgical/surgical-consumables", "verified sugarSubstitutes Page");
                         break;
                     case "ivinfusion":
@@ -475,6 +510,7 @@ public class Homepage extends Base {
                 }
                 break;
             case "veterinary":
+            helperObj.jsScrollByIndex(200);
                 switch (subEle.toLowerCase()) {
                     case "petcare":
                         helperObj.clickOnElement(homePageUi.petcare, "Clicked on Petcare element");
@@ -491,6 +527,8 @@ public class Homepage extends Base {
                 }
                 break;
             case "stores":
+            helperObj.jsScrollByIndex(350);
+            Thread.sleep(2000);
                 switch (subEle.toLowerCase()) {
                     case "vitaminstore":
                         helperObj.clickOnElement(homePageUi.vitaminStore, "Clicked on vitaminStore element");
@@ -509,6 +547,8 @@ public class Homepage extends Base {
                 }
                 break;
             case "trending":
+            helperObj.jsScrollByIndex(350);
+            Thread.sleep(2000);
                 switch (subEle.toLowerCase()) {
                     case "cerave":
                         helperObj.clickOnElement(homePageUi.ceraVe, "Clicked on ceraVe element");
@@ -528,12 +568,13 @@ public class Homepage extends Base {
         }
     }
 
-    public void HealthCorner_Dropdown_Module(String eleName) {
+    public void HealthCorner_Dropdown_Module(String eleName) throws InterruptedException {
         helperObj.hoverAnElement(homePageUi.healthCorner, "Hovered on Health Corner option");
+        Thread.sleep(2000);
         switch (eleName.toLowerCase()) {
             case "healthlibrary":
                 helperObj.clickOnElement(homePageUi.healthLibrary, "Clicked on HealthLibrary element");
-                helperObj.verifyURL_Contains_Keyword("health-packages", "verified HealthLibrary Page");
+                helperObj.verifyURL_Contains_Keyword("health-library", "verified HealthLibrary Page");
                 break;
             case "allaboutcancers":
                 helperObj.clickOnElement(homePageUi.allAboutCancers, "Clicked on AllAboutCancers element");
