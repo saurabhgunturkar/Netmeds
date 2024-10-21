@@ -1,10 +1,10 @@
-pages\Productpage.class
 utils\ExcelReader.class
 pages\Homepage.class
+TestCases\TestRunner.class
 uistore\HomePageUi.class
 utils\Screenshot.class
 utils\Base.class
 utils\PropertyReader.class
 utils\ExtentReporter.class
-runner\TestRunner.class
+api\ApiTesting.class
 utils\WebDriverHelper.class

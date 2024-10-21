@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import pages.Homepage;
 import utils.Base;
 
-public class TestRunner extends Base {
+public class Test_Homepage extends Base {
 
     // @BeforeClass
     // public void initilizeReport(){
@@ -15,6 +15,7 @@ public class TestRunner extends Base {
     // }
 
     Homepage homepage;
+    
 
     @BeforeMethod
     public void startup() {

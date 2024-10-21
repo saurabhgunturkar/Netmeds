@@ -590,4 +590,35 @@ public class Homepage extends Base {
         }
     }
 
+
+
+    public void beauty_module(String mainEle, String subEle){
+        helperObj.hoverAnElement(homePageUi.beauty, "Hovered on Beauty element");
+        switch (mainEle.toLowerCase()) {
+            case "fragrance":
+                
+                break;
+                case "hair":
+                
+                break;
+                case "mensgromming":
+                
+                break;
+                case "makeup":
+                
+                break;
+                case "skincare":
+                
+                break;
+                case "toolsAppliances":
+                
+                break;
+                case "value":
+                
+                break;
+            default:
+                break;
+        }
+    }
+
 }

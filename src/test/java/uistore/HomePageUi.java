@@ -127,13 +127,54 @@ public class HomePageUi {
         public By ceraVe = By.xpath("//ul[@class='MegaMenu_mmCategoryList']/li/a[text()='CeraVe']");
         public By cetaphill = By.xpath("//ul[@class='MegaMenu_mmCategoryList']/li/a[text()='Cetaphill']");
 
-
-
-
     public By healthCorner = By.xpath("//a[text()=' Health Corner']");
         public By healthLibrary = By.xpath("//a[text()='Health Library']");
         public By allAboutCancers = By.xpath("//a[text()='All About Cancers']");
         public By coronaAwareness = By.xpath("//a[text()='Corona Awareness']");
+
+        
+    public By beauty = By.xpath("//a[text()='Beauty']");
+        public By fragrances = By.xpath("//a[text()='Fragrances']");
+            public By men = By.xpath("//a[text()='Men']");
+            public By unisex = By.xpath("//a[text()='Unisex']");
+            public By women = By.xpath("//a[text()='Women']");
+
+        public By hair = By.xpath("//a[text()='Hair']");
+            public By haircare = By.linkText("Hair Care");
+            public By haircolor = By.xpath("Hair Color");
+            public By hairstyling = By.xpath("//a[text='Hair Styling']");
+            public By hairtoolsAccessories = By.linkText("Hair Tools & Accessories");
+            public By scalpTreatments = By.linkText("Scalp Treatments");
+            public By shopByHairType = By.linkText("Shop By Hair Type");
+        
+        public By mensGromming = By.linkText("Men's Grooming");
+            public By beardCare = By.linkText("Beard Care");
+            public By shaving = By.linkText("Shaving");
+        
+        public By makeup = By.xpath("//a[text()='Make-Up']");
+            public By eyes = By.linkText("Eyes");
+            public By faceMakeup = By.linkText("Face Makeup");
+            public By lips = By.xpath("//a[text()='Lips']");
+            public By makeUpToolsBrushes = By.linkText("Make-Up Tools & Brushes");
+            public By nails = By.linkText("Nails");
+        
+        public By toyesGamesinBeauty = By.xpath("//ul[@class='MegaMenu_mmCategoryList']/li/a[text()='Toys & Games']");
+        
+        public By skincare = By.xpath("//p[@class='MegaMenu_subheading']/a[text()='Skin Care']");
+            public By aromatherapy = By.xpath("//ul[@class='MegaMenu_mmCategoryList']/li/a[text()='Aromatherapy']");
+            public By cleansers = By.xpath("//ul[@class='MegaMenu_mmCategoryList']/li/a[text()='Cleansers']");
+            public By eyecare = By.xpath("//ul[@class='MegaMenu_mmCategoryList']/li/a[text()='Eye Care']");
+            public By faceSkinCare = By.xpath("//ul[@class='MegaMenu_mmCategoryList']/li/a[text()='Face Skin Care']");
+            public By masks = By.xpath("//ul[@class='MegaMenu_mmCategoryList']/li/a[text()='Masks']");
+            public By moisturizers = By.xpath("//ul[@class='MegaMenu_mmCategoryList']/li/a[text()='Moisturizers']");
+            public By sunscreen = By.xpath("//ul[@class='MegaMenu_mmCategoryList']/li/a[text()='Sunscreen']");
+            public By tonersSerums = By.xpath("//ul[@class='MegaMenu_mmCategoryList']/li/a[text()='Toners & Serums']");
+
+        public By toolsAppliances = By.xpath("//p[@class='MegaMenu_subheading']/a[text()='Tools & Appliances']");
+            public By faceSkintools = By.xpath("//ul[@class='MegaMenu_mmCategoryList']/li/a[text()='Face/Skin Tools']");
+            public By hairStylingTools = By.xpath("//ul[@class='MegaMenu_mmCategoryList']/li/a[text()='Hair Styling Tools']");
+            public By massageTool = By.xpath("//ul[@class='MegaMenu_mmCategoryList']/li/a[text()='Massage Tools']");
+
 
 
 
