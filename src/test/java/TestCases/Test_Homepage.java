@@ -15,7 +15,6 @@ public class Test_Homepage extends Base {
     // }
 
     Homepage homepage;
-    
 
     @BeforeMethod
     public void startup() {
@@ -304,7 +303,7 @@ public class Test_Homepage extends Base {
     @Test(groups = "wellness")
     public void stores_module_in_wellness_module() throws InterruptedException {
         homepage = new Homepage(getDriver());
-        // ExtentReporter.createTest("TC04_WellnessModule-Stores", "To test the stores
+        // ExtentReporter.createTest("TC15_WellnessModule-Stores", "To test the stores
         // options of Wellness module on HomePage");
         homepage.Wellness_Module_Elements("stores", "vitaminstore");
         getDriver().navigate().back();
@@ -318,7 +317,7 @@ public class Test_Homepage extends Base {
     @Test(groups = "wellness")
     public void trending_module_in_wellness_module() throws InterruptedException {
         homepage = new Homepage(getDriver());
-        // ExtentReporter.createTest("TC04_WellnessModule-Trending", "To test the
+        // ExtentReporter.createTest("TC16_WellnessModule-Trending", "To test the
         // trending options of Wellness module on HomePage");
         homepage.Wellness_Module_Elements("trending", "cerave");
         getDriver().navigate().back();
@@ -330,7 +329,7 @@ public class Test_Homepage extends Base {
     @Test
     public void HealthCorner_Module() throws InterruptedException {
         homepage = new Homepage(getDriver());
-        // ExtentReporter.createTest("TC04_Health Corner Module", "To test the dropdown
+        // ExtentReporter.createTest("TC17_Health Corner Module", "To test the dropdown
         // options of Health Corner module on HomePage");
         homepage.HealthCorner_Dropdown_Module("healthlibrary");
         getDriver().navigate().back();
@@ -340,6 +339,118 @@ public class Test_Homepage extends Base {
         getDriver().navigate().back();
 
     }
+
+    @Test(groups = "beauty")
+    public void fragrances_Beauty_Module() throws InterruptedException {
+        homepage = new Homepage(getDriver());
+        // ExtentReporter.createTest("TC18_Beauty Module-Fragrances", "To test the
+        // fragrances elements in Beauty module");
+        homepage.beauty_module("fragrance", "men");
+        getDriver().navigate().back();
+        homepage.beauty_module("fragrance", "unisex");
+        getDriver().navigate().back();
+        homepage.beauty_module("fragrance", "women");
+        getDriver().navigate().back();
+        homepage.beauty_module("fragrance", "");
+        getDriver().navigate().back();
+    }
+
+    @Test(groups = "beauty")
+    public void hair_Beauty_Module() throws InterruptedException {
+        homepage = new Homepage(getDriver());
+        // ExtentReporter.createTest("TC18_Beauty Module-Hair", "To test the hair
+        // elements in Beauty module");
+        homepage.beauty_module("hair", "haircare");
+        getDriver().navigate().back();
+        homepage.beauty_module("hair", "haircolor");
+        getDriver().navigate().back();
+        homepage.beauty_module("hair", "hairstyling");
+        getDriver().navigate().back();
+        homepage.beauty_module("hair", "hairtoolsAccessories");
+        getDriver().navigate().back();
+        homepage.beauty_module("hair", "scalpTreatments");
+        getDriver().navigate().back();
+        homepage.beauty_module("hair", "shopbyhairtype");
+        getDriver().navigate().back();
+        homepage.beauty_module("hair", "");
+        getDriver().navigate().back();
+
+    }
+
+    @Test(groups = "beauty")
+    public void mensgrooming_Beauty_Module() throws InterruptedException {
+        homepage = new Homepage(getDriver());
+        // ExtentReporter.createTest("TC19_Beauty Module-Mens Grooming", "To test the Mens Grooming
+        // elements in Beauty module");
+        homepage.beauty_module("mensgrooming", "beardCare");
+        getDriver().navigate().back();
+        homepage.beauty_module("mensgrooming", "shaving");
+        getDriver().navigate().back();
+        homepage.beauty_module("mensgrooming", "");
+        getDriver().navigate().back();
+
+    }
+
+    @Test(groups = "beauty")
+    public void makeup_Beauty_Module() throws InterruptedException {
+        homepage = new Homepage(getDriver());
+        // ExtentReporter.createTest("TC20_Beauty Module-MakeUp", "To test the MakeUp
+        // elements in Beauty module");
+        homepage.beauty_module("makeup", "eyes");
+        getDriver().navigate().back();
+        homepage.beauty_module("makeup", "faceMakeup");
+        getDriver().navigate().back();
+        homepage.beauty_module("makeup", "lips");
+        getDriver().navigate().back();
+        homepage.beauty_module("makeup", "makeUpToolsBrushes");
+        getDriver().navigate().back();
+        homepage.beauty_module("makeup", "nails");
+        getDriver().navigate().back();
+        homepage.beauty_module("makeup", "");
+        getDriver().navigate().back();
+
+    }
+
+
+    @Test(groups = "beauty")
+    public void skincare_Beauty_Module() throws InterruptedException {
+        homepage = new Homepage(getDriver());
+        // ExtentReporter.createTest("TC21_Beauty Module-SkinCare", "To test the SkinCare
+        // elements in Beauty module");
+        homepage.beauty_module("skincare", "aromatherapy");
+        getDriver().navigate().back();
+        homepage.beauty_module("skincare", "cleansers");
+        getDriver().navigate().back();
+        homepage.beauty_module("skincare", "eyecare");
+        getDriver().navigate().back();
+        homepage.beauty_module("skincare", "faceSkinCare");
+        getDriver().navigate().back();
+        homepage.beauty_module("skincare", "moisturizers");
+        getDriver().navigate().back();
+        homepage.beauty_module("skincare", "sunscreen");
+        getDriver().navigate().back();
+        homepage.beauty_module("skincare", "tonersSerums");
+        getDriver().navigate().back();
+        homepage.beauty_module("skincare", "");
+        getDriver().navigate().back();
+
+    }
+
+
+    @Test(groups = "beauty")
+    public void toolsAppliances_Beauty_Module() throws InterruptedException {
+        homepage = new Homepage(getDriver());
+        // ExtentReporter.createTest("TC21_Beauty Module-Tools & Appliances", "To test the Tools and Appliances
+        // elements in Beauty module");
+        homepage.beauty_module("toolsappliances", "faceskintools");
+        getDriver().navigate().back();
+        homepage.beauty_module("toolsappliances", "hairstylingtools");
+        getDriver().navigate().back();
+        homepage.beauty_module("toolsappliances", "massagetool");
+        getDriver().navigate().back();
+
+    }
+
 
     @AfterMethod
     public void tearDown() {

@@ -25,7 +25,7 @@ public class Homepage extends Base {
         helperObj = new WebDriverHelper(driver, test, webElement);
     }
 
-    public void verifyNetmedsOpensinBrowser(){
+    public void verifyNetmedsOpensinBrowser() {
         helperObj.verifyURL("https://www.netmeds.com/", "Netmeds opens in browser");
     }
 
@@ -43,11 +43,12 @@ public class Homepage extends Base {
                 break;
             case "Buy Again":
                 helperObj.clickOnElement(homePageUi.buyAgain, "Clicked on Buy_Again element");
-                //helperObj.verifyURL_Contains_Keyword("buyagain", "verified BuyAgain Page");
+                // helperObj.verifyURL_Contains_Keyword("buyagain", "verified BuyAgain Page");
                 break;
             case "Order Online":
                 helperObj.clickOnElement(homePageUi.orderOnline, "Clicked on Order_Online element");
-                //helperObj.verifyURL_Contains_Keyword("order-medicine", "verified OrderOnline Page");
+                // helperObj.verifyURL_Contains_Keyword("order-medicine", "verified OrderOnline
+                // Page");
                 break;
             default:
                 System.out.println("Medicine Dropdown Module Testing is failed");
@@ -106,13 +107,13 @@ public class Homepage extends Base {
                                 "verified BusinessEssentails Page");
                         break;
                     case "maskglovesessential":
-                    helperObj.jsScrollByIndex(250);
+                        helperObj.jsScrollByIndex(250);
                         helperObj.clickOnElement(homePageUi.maskGloves, "Clicked on MaskGlovesEssentials element");
                         helperObj.verifyURL_Contains_Keyword("covid-essentials/mask-gloves-protective-equipment",
                                 "verified MaskGlovesEssentials Page");
                         break;
                     case "travel":
-                    helperObj.jsScrollByIndex(250);
+                        helperObj.jsScrollByIndex(250);
                         helperObj.clickOnElement(homePageUi.travelEssentials, "Clicked on TravelEssentials element");
                         helperObj.verifyURL_Contains_Keyword("covid-essentials/travel-essentials",
                                 "verified TravelEssentials Page");
@@ -127,30 +128,30 @@ public class Homepage extends Base {
             case "devices":
                 switch (subEle.toLowerCase()) {
                     case "breath":
-                    helperObj.jsScrollByIndex(250);
+                        helperObj.jsScrollByIndex(250);
                         helperObj.clickOnElement(homePageUi.breathEasy, "Clicked on BreathEasy element");
                         helperObj.verifyURL_Contains_Keyword("devices/breathe-easy", "verified BreathEasy Page");
                         break;
                     case "surgical":
-                    helperObj.jsScrollByIndex(260);
+                        helperObj.jsScrollByIndex(260);
                         helperObj.clickOnElement(homePageUi.surgicalAcessories,
                                 "Clicked on Surgical Accessories element");
                         helperObj.verifyURL_Contains_Keyword("devices/surgical-accessories",
                                 "verified Surgical Accessories Page");
-                                
+
                         break;
                     case "orthopaedics":
-                    helperObj.jsScrollByIndex(260);
+                        helperObj.jsScrollByIndex(260);
                         helperObj.clickOnElement(homePageUi.orthopedics, "Clicked on Orthopaedics element");
                         helperObj.verifyURL_Contains_Keyword("devices/orthopaedics", "verified Orthopedics Page");
                         break;
                     case "measurements":
-                    helperObj.jsScrollByIndex(270);
+                        helperObj.jsScrollByIndex(270);
                         helperObj.clickOnElement(homePageUi.measurements, "Clicked on Measurements element");
                         helperObj.verifyURL_Contains_Keyword("devices/measurements", "verified Measurements Page");
                         break;
                     default:
-                    helperObj.jsScrollByIndex(250);
+                        helperObj.jsScrollByIndex(250);
                         helperObj.clickOnElement(homePageUi.devices, "By default, clicked on Devices Element");
                         helperObj.verifyURL_Contains_Keyword("devices", "verified Devices Page");
                         break;
@@ -193,7 +194,7 @@ public class Homepage extends Base {
                 }
                 break;
             case "eyewear":
-            helperObj.jsScrollByIndex(200);
+                helperObj.jsScrollByIndex(200);
                 switch (subEle.toLowerCase()) {
                     case "eyeglass":
                         helperObj.clickOnElement(homePageUi.eyeGlasses, "Clicked on EyeGlasses Element");
@@ -215,9 +216,9 @@ public class Homepage extends Base {
                 }
                 break;
             case "fitness":
-            
-            helperObj.jsScrollByIndex(340);
-            Thread.sleep(2000);
+
+                helperObj.jsScrollByIndex(340);
+                Thread.sleep(2000);
                 switch (subEle.toLowerCase()) {
                     case "weightmanagement":
                         helperObj.clickOnElement(homePageUi.weightManagement, "Clicked on WeightManagement element");
@@ -263,8 +264,8 @@ public class Homepage extends Base {
                 }
                 break;
             case "health conditions":
-            helperObj.jsScrollByIndex(50);
-            Thread.sleep(2000);
+                helperObj.jsScrollByIndex(50);
+                Thread.sleep(2000);
                 switch (subEle.toLowerCase()) {
                     case "womencare":
                         helperObj.clickOnElement(homePageUi.womenCare, "Clicked on WomenCare element");
@@ -317,20 +318,20 @@ public class Homepage extends Base {
                                 "verified CardiacCare Page");
                         break;
                     case "coldfevercare":
-                    helperObj.jsScrollByIndex(200);
-                    Thread.sleep(2000);
+                        helperObj.jsScrollByIndex(200);
+                        Thread.sleep(2000);
                         helperObj.clickOnElement(homePageUi.coldFever, "Clicked on ColdFever element");
                         helperObj.verifyURL_Contains_Keyword("health-conditions/cold-and-fever",
                                 "verified ColdFever Page");
                         break;
                     case "immunitycare":
-                    helperObj.jsScrollByIndex(250);
+                        helperObj.jsScrollByIndex(250);
                         helperObj.clickOnElement(homePageUi.immunityCare, "Clicked on ImmunityCare element");
                         helperObj.verifyURL_Contains_Keyword("health-conditions/immunity-care",
                                 "verified ImmunityCare Page");
                         break;
                     case "lungcare":
-                    helperObj.jsScrollByIndex(270);
+                        helperObj.jsScrollByIndex(270);
                         helperObj.clickOnElement(homePageUi.lungCare, "Clicked on LungCare element");
                         helperObj.verifyURL_Contains_Keyword("health-conditions/lung-care", "verified LungCare Page");
                         break;
@@ -342,8 +343,8 @@ public class Homepage extends Base {
                 }
                 break;
             case "mom and baby":
-            helperObj.jsScrollByIndex(350);
-            Thread.sleep(2000);
+                helperObj.jsScrollByIndex(350);
+                Thread.sleep(2000);
                 switch (subEle.toLowerCase()) {
                     case "babycare":
                         helperObj.clickOnElement(homePageUi.babyCare, "Clicked on BabyCare element");
@@ -362,7 +363,7 @@ public class Homepage extends Base {
                         helperObj.clickOnElement(homePageUi.maternityCare, "Clicked on MaternityCare element");
                         helperObj.verifyURL_Contains_Keyword("mom-baby/maternity-care", "verified MaternityCare Page");
                         break;
-                    case "maternityaccessories":    
+                    case "maternityaccessories":
                         helperObj.clickOnElement(homePageUi.maternityAccessories,
                                 "Clicked on MaternityAccessories element");
                         helperObj.verifyURL_Contains_Keyword("mom-baby/maternity-accessories",
@@ -375,8 +376,8 @@ public class Homepage extends Base {
                 }
                 break;
             case "personal care":
-            helperObj.jsScrollByIndex(50);
-            // Thread.sleep(2000);
+                helperObj.jsScrollByIndex(50);
+                // Thread.sleep(2000);
                 switch (subEle.toLowerCase()) {
                     case "homehealth":
                         helperObj.clickOnElement(homePageUi.homeHealth, "Clicked on homeHealth element");
@@ -418,22 +419,23 @@ public class Homepage extends Base {
                         helperObj.verifyURL_Contains_Keyword("personal-care/lip-care", "verified LipCare Page");
                         break;
                     case "bathingaccessories":
-                    helperObj.jsScrollByIndex(250);
+                        helperObj.jsScrollByIndex(250);
                         helperObj.clickOnElement(homePageUi.bathingAccessories,
                                 "Clicked on BathingAccessories element");
                         helperObj.verifyURL_Contains_Keyword("personal-care/bathing-accessories",
                                 "verified BathingAccessories Page");
                         break;
                     default:
-                    // helperObj.jsScrollAtTheTop();
-                        helperObj.clickOnElement(homePageUi.personalCare, "By default, Clicked on personalCare element");
+                        // helperObj.jsScrollAtTheTop();
+                        helperObj.clickOnElement(homePageUi.personalCare,
+                                "By default, Clicked on personalCare element");
                         helperObj.verifyURL_Contains_Keyword("personal-care", "verified personalCare Page");
                         break;
                 }
                 break;
             case "sexual wellness":
-            helperObj.jsScrollByIndex(350);
-            Thread.sleep(2000);
+                helperObj.jsScrollByIndex(350);
+                Thread.sleep(2000);
                 switch (subEle.toLowerCase()) {
                     case "condoms":
                         helperObj.clickOnElement(homePageUi.condoms, "Clicked on Condoms element");
@@ -466,17 +468,19 @@ public class Homepage extends Base {
                 }
                 break;
             case "surgical":
-            helperObj.jsScrollByIndex(50);
-            Thread.sleep(2000);
+                helperObj.jsScrollByIndex(50);
+                Thread.sleep(2000);
                 switch (subEle.toLowerCase()) {
                     case "respiratorysupplies":
                         helperObj.clickOnElement(homePageUi.respiratorySupplies,
                                 "Clicked on respiratorySupplies element");
-                        helperObj.verifyURL_Contains_Keyword("surgical/respiratory-supplies", "verified respiratorySupplies Page");
+                        helperObj.verifyURL_Contains_Keyword("surgical/respiratory-supplies",
+                                "verified respiratorySupplies Page");
                         break;
                     case "sugarconsumables":
                         helperObj.clickOnElement(homePageUi.surgicalConsumables, "Clicked on sugarSubstitutes element");
-                        helperObj.verifyURL_Contains_Keyword("surgical/surgical-consumables", "verified sugarSubstitutes Page");
+                        helperObj.verifyURL_Contains_Keyword("surgical/surgical-consumables",
+                                "verified sugarSubstitutes Page");
                         break;
                     case "ivinfusion":
                         helperObj.clickOnElement(homePageUi.IvInfusion, "Clicked on IvInfusion element");
@@ -485,7 +489,8 @@ public class Homepage extends Base {
                     case "surgicalinstrument":
                         helperObj.clickOnElement(homePageUi.surgicalInstrument,
                                 "Clicked on surgicalInstrument element");
-                        helperObj.verifyURL_Contains_Keyword("surgical/surgical-instrument", "verified surgicalInstrument Page");
+                        helperObj.verifyURL_Contains_Keyword("surgical/surgical-instrument",
+                                "verified surgicalInstrument Page");
                         break;
                     case "dressing":
                         helperObj.clickOnElement(homePageUi.dressing, "Clicked on dressing element");
@@ -501,7 +506,8 @@ public class Homepage extends Base {
                         break;
                     case "woundtreatment":
                         helperObj.clickOnElement(homePageUi.woundTreatment, "Clicked on woundTreatment element");
-                        helperObj.verifyURL_Contains_Keyword("surgical/wound-treatment", "verified woundTreatment Page");
+                        helperObj.verifyURL_Contains_Keyword("surgical/wound-treatment",
+                                "verified woundTreatment Page");
                         break;
                     default:
                         helperObj.clickOnElement(homePageUi.surgical, "By default, Clicked on Surgical element");
@@ -510,7 +516,7 @@ public class Homepage extends Base {
                 }
                 break;
             case "veterinary":
-            helperObj.jsScrollByIndex(200);
+                helperObj.jsScrollByIndex(200);
                 switch (subEle.toLowerCase()) {
                     case "petcare":
                         helperObj.clickOnElement(homePageUi.petcare, "Clicked on Petcare element");
@@ -527,8 +533,8 @@ public class Homepage extends Base {
                 }
                 break;
             case "stores":
-            helperObj.jsScrollByIndex(350);
-            Thread.sleep(2000);
+                helperObj.jsScrollByIndex(350);
+                Thread.sleep(2000);
                 switch (subEle.toLowerCase()) {
                     case "vitaminstore":
                         helperObj.clickOnElement(homePageUi.vitaminStore, "Clicked on vitaminStore element");
@@ -547,8 +553,8 @@ public class Homepage extends Base {
                 }
                 break;
             case "trending":
-            helperObj.jsScrollByIndex(350);
-            Thread.sleep(2000);
+                helperObj.jsScrollByIndex(350);
+                Thread.sleep(2000);
                 switch (subEle.toLowerCase()) {
                     case "cerave":
                         helperObj.clickOnElement(homePageUi.ceraVe, "Clicked on ceraVe element");
@@ -590,33 +596,205 @@ public class Homepage extends Base {
         }
     }
 
-
-
-    public void beauty_module(String mainEle, String subEle){
+    public void beauty_module(String mainEle, String subEle) throws InterruptedException {
+        helperObj.jsScrollAtTheTop();
+        helperObj.mouseCursorOffsetPosition(16, 46);
         helperObj.hoverAnElement(homePageUi.beauty, "Hovered on Beauty element");
+        Thread.sleep(2000);
         switch (mainEle.toLowerCase()) {
             case "fragrance":
-                
+                switch (subEle.toLowerCase()) {
+                    case "men":
+                        helperObj.clickOnElement(homePageUi.men, "clicked on Men element");
+                        helperObj.verifyURL_Contains_Keyword("fragrances/men", "verified Fragrances-Men Page");
+                        break;
+                    case "unisex":
+                        helperObj.clickOnElement(homePageUi.unisex, "clicked on Unisex element");
+                        helperObj.verifyURL_Contains_Keyword("fragrances/unisex", "verified Fragrances-Unisex Page");
+                        break;
+                    case "women":
+                        helperObj.clickOnElement(homePageUi.women, "clicked on Women element");
+                        helperObj.verifyURL_Contains_Keyword("fragrances/women", "verified Fragrances-Women Page");
+                        break;
+                    default:
+                        helperObj.clickOnElement(homePageUi.fragrances, "clicked on Fragrances page");
+                        break;
+                }
                 break;
-                case "hair":
-                
+            case "hair":
+                switch (subEle.toLowerCase()) {
+                    case "haircare":
+                        helperObj.jsScrollByIndex(100);
+                        helperObj.clickOnElement(homePageUi.haircare, "clicked on Haircare element");
+                        helperObj.verifyURL_Contains_Keyword("hair/hair-care", "verified Hair-Haircare Page");
+                        break;
+                    case "haircolor":
+                        helperObj.jsScrollByIndex(100);
+                        helperObj.clickOnElement(homePageUi.haircolor, "clicked Haircolor element");
+                        helperObj.verifyURL_Contains_Keyword("hair/hair-color", "verified Hair-Haircolor Page");
+                        break;
+                    case "hairstyling":
+                        helperObj.jsScrollByIndex(100);
+                        helperObj.clickOnElement(homePageUi.hairstyling, "clicked on Hairstyling element");
+                        helperObj.verifyURL_Contains_Keyword("hair/hair-styling", "verified Hair-Hairstyling Page");
+                        break;
+                    case "hairtoolsaccessories":
+                        helperObj.jsScrollByIndex(150);
+                        Thread.sleep(2000);
+                        helperObj.clickOnElement(homePageUi.hairtoolsAccessories,
+                                "clicked on HairtoolsAccessories element");
+                        helperObj.verifyURL_Contains_Keyword("hair/hair-tools-accessories",
+                                "verified Hair-HairToolsAccessories Page");
+                        break;
+                    case "scalptreatments":
+                        helperObj.jsScrollByIndex(170);
+                        Thread.sleep(2000);
+                        helperObj.clickOnElement(homePageUi.scalpTreatments, "clicked on Haircare element");
+                        helperObj.verifyURL_Contains_Keyword("hair/scalp-treatment",
+                                "verified Hair-ScalpTreatments Page");
+                        break;
+                    case "shopbyhairtype":
+                        helperObj.jsScrollByIndex(180);
+                        Thread.sleep(2000);
+                        helperObj.clickOnElement(homePageUi.shopByHairType, "clicked on ShopByHairType element");
+                        helperObj.verifyURL_Contains_Keyword("hair/shop-by-hair-type",
+                                "verified Hair-ShopByHairType Page");
+                        break;
+                    default:
+                        helperObj.clickOnElement(homePageUi.hair, "clicked on Hair page");
+                        break;
+                }
                 break;
-                case "mensgromming":
-                
+            case "mensgrooming":
+                helperObj.jsScrollByIndex(300);
+                Thread.sleep(2000);
+                switch (subEle.toLowerCase()) {
+                    case "beardcare":
+                        helperObj.clickOnElement(homePageUi.beardCare, "clicked on BeardCare page");
+                        helperObj.verifyURL_Contains_Keyword("men-s-grooming/beard-care",
+                                "verified the MensGrooming-Beardcare page");
+                        break;
+                    case "shaving":
+                        helperObj.clickOnElement(homePageUi.shaving, "clicked on Shaving page");
+                        helperObj.verifyURL_Contains_Keyword("men-s-grooming/shaving",
+                                "verified the MensGrooming-Shaving page");
+                        break;
+                    default:
+                        helperObj.clickOnElement(homePageUi.mensGromming, "clicked on MensGrooming page");
+                        break;
+                }
                 break;
-                case "makeup":
-                
+            case "makeup":
+                switch (subEle.toLowerCase()) {
+                    case "eyes":
+                        helperObj.clickOnElement(homePageUi.eyes, "clicked on Eyes page");
+                        helperObj.verifyURL_Contains_Keyword("make-up/eyes",
+                                "verified the MakeUp-Eyes page");
+                        break;
+                    case "facemakeup":
+                        helperObj.clickOnElement(homePageUi.faceMakeup, "clicked on FaceMakeUp page");
+                        helperObj.verifyURL_Contains_Keyword("make-up/face-makeup",
+                                "verified the MakeUp-FaceMakeUp page");
+                        break;
+                    case "lips":
+                        helperObj.clickOnElement(homePageUi.lips, "clicked on Lips page");
+                        helperObj.verifyURL_Contains_Keyword("make-up/lips",
+                                "verified the MakeUp-Lips page");
+                        break;
+                    case "makeuptoolsbrushes":
+                        helperObj.clickOnElement(homePageUi.makeUpToolsBrushes, "clicked on MakeUpToolsBrushes page");
+                        helperObj.verifyURL_Contains_Keyword("make-up/make-up-tools-brushes",
+                                "verified the MakeUp-Make-Up-Tools-Brushes page");
+                        break;
+                    case "nails":
+                        helperObj.clickOnElement(homePageUi.nails, "clicked on  Nails page");
+                        helperObj.verifyURL_Contains_Keyword("make-up/nails",
+                                "verified the MakeUp-Nails page");
+                        break;
+                    default:
+                        break;
+                }
                 break;
-                case "skincare":
-                
+            case "skincare":
+                switch (subEle.toLowerCase()) {
+                    case "aromatherapy":
+                        helperObj.clickOnElement(homePageUi.aromatherapy, "cliked on Aromatherapy element");
+                        helperObj.verifyURL_Contains_Keyword("skin-care/aromatherapy",
+                                "verified Skincare-Aromatherapy element");
+                        break;
+                    case "cleansers":
+                        helperObj.clickOnElement(homePageUi.cleansers, "cliked on Cleansers element");
+                        helperObj.verifyURL_Contains_Keyword("skin-care/cleansers",
+                                "verified Skincare-Cleansers element");
+                        break;
+                    case "eyecare":
+                        helperObj.clickOnElement(homePageUi.eyecare, "cliked on Eyecare element");
+                        helperObj.verifyURL_Contains_Keyword("skin-care/eye-care",
+                                "verified Skincare-Eyecare element");
+                        break;
+                    case "faceskincare":
+                        helperObj.clickOnElement(homePageUi.faceSkinCare, "cliked on FaceSkinCare element");
+                        helperObj.verifyURL_Contains_Keyword("skin-care/face-skin-care",
+                                "verified Skincare-FaceSkinCare element");
+                        break;
+                    case "masks":
+                        helperObj.clickOnElement(homePageUi.masks, "cliked on Masks element");
+                        helperObj.verifyURL_Contains_Keyword("skin-care/masks",
+                                "verified Skincare-Masks element");
+                        break;
+                    case "moisturizers":
+                        helperObj.clickOnElement(homePageUi.moisturizers, "cliked on Moisturizers element");
+                        helperObj.verifyURL_Contains_Keyword("skin-care/moisturizers",
+                                "verified Skincare-Moisturizers element");
+                        break;
+                    case "sunscreen":
+                        helperObj.clickOnElement(homePageUi.sunscreen, "cliked on Sunscreen element");
+                        helperObj.verifyURL_Contains_Keyword("skin-care/sunscreen",
+                                "verified Skincare-Sunscreen element");
+                        break;
+                    case "tonersserums":
+                        helperObj.clickOnElement(homePageUi.tonersSerums, "cliked on TonersSerums element");
+                        helperObj.verifyURL_Contains_Keyword("skin-care/toners-serums",
+                                "verified Skincare-TonersSerums element");
+                        break;
+                    default:
+                        helperObj.clickOnElement(homePageUi.skincare, "clicked on Skincare element");
+                        break;
+                }
+
                 break;
-                case "toolsAppliances":
-                
-                break;
-                case "value":
-                
+            case "toolsappliances":
+                switch (subEle.toLowerCase()) {
+                    case "faceskintools":
+                    helperObj.jsScrollByIndex(300);
+                    Thread.sleep(2000);
+                        helperObj.clickOnElement(homePageUi.faceSkintools, "cliked on FaceSkintools element");
+                        helperObj.verifyURL_Contains_Keyword("tools-appliances/face-skin-tools",
+                                "verified Tools & Appliances-FaceSkintools element");
+                        break;
+                    case "hairstylingtools":
+                    helperObj.jsScrollByIndex(300);
+                    Thread.sleep(2000);
+                        helperObj.clickOnElement(homePageUi.hairStylingTools, "cliked on HairStylingTools element");
+                        helperObj.verifyURL_Contains_Keyword("tools-appliances/hair-styling-tools",
+                                "verified Tools & Appliances-HairStylingTools element");
+                        break;
+                    case "massagetool":
+                    helperObj.jsScrollByIndex(300);
+                    Thread.sleep(2000);
+                        helperObj.clickOnElement(homePageUi.massageTool, "cliked on FaceSkintools element");
+                        helperObj.verifyURL_Contains_Keyword("tools-appliances/massage-tools",
+                                "verified Tools & Appliances-MassageTool element");
+                        break;
+                    default:
+                    helperObj.jsScrollByIndex(300);
+                    Thread.sleep(2000);
+                        helperObj.clickOnElement(homePageUi.toolsAppliances, "clicked on ToolsAndAppliances element");
+                        break;
+                }
                 break;
             default:
+                System.out.println("Error!!!!: Beauty Module Testing is failed");
                 break;
         }
     }

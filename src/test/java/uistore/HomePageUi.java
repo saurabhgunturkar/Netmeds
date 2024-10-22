@@ -141,9 +141,9 @@ public class HomePageUi {
 
         public By hair = By.xpath("//a[text()='Hair']");
             public By haircare = By.linkText("Hair Care");
-            public By haircolor = By.xpath("Hair Color");
-            public By hairstyling = By.xpath("//a[text='Hair Styling']");
-            public By hairtoolsAccessories = By.linkText("Hair Tools & Accessories");
+            public By haircolor = By.linkText("Hair Color");
+            public By hairstyling = By.linkText("Hair Styling");
+            public By hairtoolsAccessories = By.xpath("//ul[@class='MegaMenu_mmCategoryList']/li/a[text()='Hair Tools & Accessories']");
             public By scalpTreatments = By.linkText("Scalp Treatments");
             public By shopByHairType = By.linkText("Shop By Hair Type");
         
