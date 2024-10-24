@@ -175,11 +175,47 @@ public class HomePageUi {
             public By hairStylingTools = By.xpath("//ul[@class='MegaMenu_mmCategoryList']/li/a[text()='Hair Styling Tools']");
             public By massageTool = By.xpath("//ul[@class='MegaMenu_mmCategoryList']/li/a[text()='Massage Tools']");
 
+        // Company's elements xpaths...
+            public By aboutnetmeds = By.linkText("About Netmeds");
+            public By customerSpeak = By.linkText("Customers Speak");
+            public By inthenews = By.linkText("In the News");
+            public By career = By.linkText("Career");
+            public By contact = By.linkText("Contact");
 
 
+        // OurPolicies's elements xpaths...
+        public By termsAndConditions = By.linkText("Terms and Conditions");
+        public By privacyPolicy = By.linkText("Privacy Policy");
+        public By feesandPaymentsPolicy = By.linkText("Fees and Payments Policy");
+        public By shippingandDeliveryPolicy = By.linkText("Shipping and Delivery Policy");
+        public By returnRefundandCancellationPolicy = By.linkText("Return, Refund and Cancellation Policy");
+        public By editorialPolicy =  By.linkText("Editorial Policy");
 
+        //shopping's elements xpaths...
+        public By browsByAtoZ = By.linkText("Browse by A-Z");
+        public By browsByManufacture = By.linkText("Browse by Manufacturers");
+        public By healthArticles = By.linkText("Health Articles");
+        public By offerCoupons = By.linkText("Offers / Coupons");
+        public By fAQs = By.linkText("FAQs");
+        
+        //popular Categories's elements xpaths...
+        public By fitness2 = By.linkText("Fitness");
+        public By devices2 = By.linkText("Devices");
+        public By personalCare2 = By.linkText("Personal Care");
+        public By ayurveda2 = By.linkText("Ayurveda");
+        public By homeopathy2 = By.linkText("Homeopathy");
+        public By treatments2 = By.linkText("Treatments");
+        public By sexualWellness2 = By.linkText("Sexual Wellness");
+        public By Surgicals2 = By.linkText("Surgicals");
 
-
+        //social categories's elements xpaths...
+        public By patientsAlike = By.linkText("Patients Alike");
+        public By facebook = By.linkText("Facebook");
+        public By twitter = By.linkText("Twitter");
+        public By linkedIn = By.linkText("LinkedIn");
+        public By youtube = By.linkText("Youtube");
+        public By instagram = By.linkText("Instagram");
+        public By ReferEarn = By.linkText("Refer & Earn");
 
 
 

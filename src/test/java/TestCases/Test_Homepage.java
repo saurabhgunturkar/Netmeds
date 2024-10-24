@@ -451,6 +451,100 @@ public class Test_Homepage extends Base {
 
     }
 
+    @Test(groups = "footer")
+    public void company_footer_module()throws InterruptedException{
+        homepage = new Homepage(getDriver());
+        // ExtentReporter.createTest("TC22-Footer Module-Company", "To test the Company
+        // elements in footer module");
+        homepage.footer_module("company", "aboutnetmeds");
+        getDriver().navigate().back();
+        homepage.footer_module("company", "customerspeak");
+        getDriver().navigate().back();
+        homepage.footer_module("company", "inthenews");
+        getDriver().navigate().back();
+        homepage.footer_module("company", "contact");
+        getDriver().navigate().back();
+        homepage.footer_module("company", "career");
+        // getDriver().navigate().back();
+        
+    }
+
+    @Test
+    public void policy_footer_module()throws InterruptedException{
+        homepage = new Homepage(getDriver());
+        // ExtentReporter.createTest("TC23-Footer Module-Policies", "To test the Policies
+        // elements in footer module");
+        homepage.footer_module("policies", "termsandconditions");
+        getDriver().navigate().back();
+        homepage.footer_module("policies", "privacypolicy");
+        getDriver().navigate().back();
+        homepage.footer_module("policies", "feesandpaymentspolicy");
+        getDriver().navigate().back();
+        homepage.footer_module("policies", "ShippingandDeliveryPolicy");
+        getDriver().navigate().back();
+        homepage.footer_module("policies", "ReturnRefundandCancellationPolicy");
+        getDriver().navigate().back();
+        homepage.footer_module("policies", "EditorialPolicy");
+        getDriver().navigate().back();
+    }
+
+    @Test
+    public void shipping_footer_module()throws InterruptedException{
+        homepage = new Homepage(getDriver());
+        // ExtentReporter.createTest("TC24-Footer Module-Shipping", "To test the Shipping
+        // elements in footer module");
+        homepage.footer_module("shopping", "browsbyatoz");
+        getDriver().navigate().back();
+        homepage.footer_module("shopping", "browsbymanufacture");
+        getDriver().navigate().back();
+        homepage.footer_module("shopping", "healthArticles");
+        getDriver().navigate().back();
+        homepage.footer_module("shopping", "offerCoupons");
+        getDriver().navigate().back();
+        homepage.footer_module("shopping", "fAQs");
+        getDriver().navigate().back();
+    }
+
+    @Test
+    public void product_Categories_footer_module()throws InterruptedException{
+        homepage = new Homepage(getDriver());
+        // ExtentReporter.createTest("TC25-Footer Module-Product Categories", "To test the product categories
+        // elements in footer module");
+        homepage.footer_module("categories", "fitness2");
+        getDriver().navigate().back();
+        homepage.footer_module("categories", "devices2");
+        getDriver().navigate().back();
+        homepage.footer_module("categories", "personalcare2");
+        getDriver().navigate().back();
+        homepage.footer_module("categories", "ayurveda2");
+        getDriver().navigate().back();
+        homepage.footer_module("categories", "homeopathy2");
+        getDriver().navigate().back();
+        homepage.footer_module("categories", "treatments2");
+        getDriver().navigate().back();
+        homepage.footer_module("categories", "sexualwellness2");
+        getDriver().navigate().back();
+        homepage.footer_module("categories", "surgicals2");
+        getDriver().navigate().back();
+
+    }
+
+    @Test
+    public void SocialMedias_footer_module() throws InterruptedException{
+        homepage = new Homepage(getDriver());
+        // ExtentReporter.createTest("TC26-Footer Module-Social Media", "To test the social media options
+        // elements in footer module");
+        homepage.footer_module("socialmedia", "patientsalike");
+        // homepage.footer_module("socialmedia", "facebook");
+        // homepage.footer_module("socialmedia", "twitter");
+        // homepage.footer_module("socialmedia", "linkedin");
+        // homepage.footer_module("socialmedia", "youtube");
+        // homepage.footer_module("socialmedia", "instagram");
+        // homepage.footer_module("socialmedia", "referearn");
+
+    }
+
+
 
     @AfterMethod
     public void tearDown() {

@@ -799,4 +799,228 @@ public class Homepage extends Base {
         }
     }
 
+    public void footer_module(String mainEle, String subEle) throws InterruptedException{
+        switch (mainEle.toLowerCase()) {
+            case "company":
+                switch (subEle.toLowerCase()) {
+                    case "aboutnetmeds":
+                        helperObj.jsScrollByIndex(2500);
+                        Thread.sleep(2000);
+                        helperObj.clickOnElement(homePageUi.aboutnetmeds, "Clicked on AboutNetmeds element");
+                        helperObj.verifyURL_Contains_Keyword("about-us", "Verified About-US page");
+                        break;
+                        case "customerspeak":
+                        helperObj.jsScrollAtTheBottom();
+                        Thread.sleep(2000);
+                        helperObj.clickOnElement(homePageUi.customerSpeak, "Clicked on CustomerSpeak element");
+                        helperObj.verifyURL_Contains_Keyword("testimonial", "Verified CustomerSpeak page");
+                        break;
+                        case "inthenews":
+                        helperObj.jsScrollAtTheBottom();
+                        Thread.sleep(2000);
+                        helperObj.clickOnElement(homePageUi.inthenews, "Clicked on News element");
+                        helperObj.verifyURL_Contains_Keyword("news", "Verified News page");
+                        break;
+                        case "career":
+                        helperObj.jsScrollAtTheBottom();
+                        Thread.sleep(2000);
+                        helperObj.clickOnElement(homePageUi.career, "Clicked on Career element");
+                        helperObj.switchToNewWindow("Careers");
+                        // helperObj.switchToNewWindow("Homepage");
+                        // helperObj.verifyURL_Contains_Keyword("career", "Verified Career page");
+                        break;
+                        case "contact":
+                        helperObj.jsScrollAtTheBottom();
+                        Thread.sleep(2000);
+                        helperObj.clickOnElement(homePageUi.contact, "Clicked on Contact element");
+                        // helperObj.verifyURL_Contains_Keyword("contact-us", "Verified Contact page");
+                        break;
+                    default:
+                        System.err.println("Company module testing is failed");
+                        break;
+                }
+                break;
+            case "policies":
+                switch (subEle.toLowerCase()) {
+                    case "termsandconditions":
+                    helperObj.jsScrollByIndex(2500);
+                    Thread.sleep(2000);
+                    helperObj.clickOnElement(homePageUi.termsAndConditions, "Clicked on termsAndConditions element");
+                    helperObj.verifyURL_Contains_Keyword("terms-and-conditions", "Verified termsAndConditions page");
+                        break;
+                        case "privacypolicy":
+                        helperObj.jsScrollAtTheBottom();
+                        Thread.sleep(2000);
+                        helperObj.clickOnElement(homePageUi.privacyPolicy, "Clicked on PrivacyPolicy element");
+                        helperObj.verifyURL_Contains_Keyword("privacy-policy", "Verified PrivacyPolicy page");
+                        break;
+                        case "feesandpaymentspolicy":
+                        helperObj.jsScrollAtTheBottom();
+                        Thread.sleep(2000);
+                        helperObj.clickOnElement(homePageUi.feesandPaymentsPolicy, "Clicked on FeesAndPaymentsPolicy element");
+                        helperObj.verifyURL_Contains_Keyword("fees-and-payments-policy", "Verified FeesAndPaymentsPolicy page");
+                        break;
+                        case "shippinganddeliverypolicy":
+                        helperObj.jsScrollAtTheBottom();
+                        Thread.sleep(2000);
+                        helperObj.clickOnElement(homePageUi.shippingandDeliveryPolicy, "Clicked on ShippingandDeliveryPolicy element");
+                        helperObj.verifyURL_Contains_Keyword("shipping-and-delivery-policy", "Verified shippingandDeliveryPolicy page");
+                        break;
+                        case "returnrefundandcancellationpolicy":
+                        helperObj.jsScrollAtTheBottom();
+                        Thread.sleep(2000);
+                        helperObj.clickOnElement(homePageUi.returnRefundandCancellationPolicy, "Clicked on ReturnRefundandCancellationPolicy element");
+                        helperObj.verifyURL_Contains_Keyword("return-refund-and-cancellation-policy", "Verified ReturnRefundandCancellationPolicy page");
+                        break;
+                        case "editorialpolicy":
+                        helperObj.jsScrollAtTheBottom();
+                        Thread.sleep(2000);
+                        helperObj.clickOnElement(homePageUi.editorialPolicy, "Clicked on EditorialPolicy element");
+                        helperObj.verifyURL_Contains_Keyword("editorial-policy", "Verified EditorialPolicy page");
+                        break;
+                    default:
+                    System.err.println("Policy module testing is failed");
+                        break;
+                }
+                
+                break;
+                case "shopping":
+                switch (subEle.toLowerCase()) {
+                    case "browsbyatoz":
+                    helperObj.jsScrollByIndex(2500);
+                    Thread.sleep(2000);
+                    helperObj.clickOnElement(homePageUi.browsByAtoZ, "Clicked on BrowsByAtoZ element");
+                    helperObj.verifyURL_Contains_Keyword("prescriptions", "Verified BrowsByAtoZ page");
+                        break;
+                        case "browsbymanufacture":
+                        helperObj.jsScrollByIndex(2500);
+                        Thread.sleep(2000);
+                        helperObj.clickOnElement(homePageUi.browsByManufacture, "Clicked on BrowsByManufacture element");
+                        helperObj.verifyURL_Contains_Keyword("manufacturers", "Verified BrowsByManufacture page");
+                        break;
+                        case "healtharticles":
+                        helperObj.jsScrollAtTheBottom();
+                        Thread.sleep(2000);
+                        helperObj.clickOnElement(homePageUi.healthArticles, "Clicked on HealthArticles element");
+                        helperObj.verifyURL_Contains_Keyword("health-library", "Verified HealthArticles page");
+                        break;
+                        case "offercoupons":
+                        helperObj.jsScrollAtTheBottom();
+                        Thread.sleep(2000);
+                        helperObj.clickOnElement(homePageUi.offerCoupons, "Clicked on OfferCoupons element");
+                        helperObj.verifyURL_Contains_Keyword("offers", "Verified OfferCoupons page");
+                        break;
+                        case "faqs":
+                        helperObj.jsScrollAtTheBottom();
+                        Thread.sleep(2000);
+                        helperObj.clickOnElement(homePageUi.fAQs, "Clicked on FAQs element");
+                        helperObj.verifyURL_Contains_Keyword("faqs", "Verified FAQs page");
+                        break;
+                    default:
+                    System.err.println("Shopping module testing is failed");
+                        break;
+                }
+                break;
+                case "categories":
+                switch (subEle.toLowerCase()) {
+                    case "fitness2":
+                        helperObj.jsScrollByIndex(2500);
+                        Thread.sleep(2000);
+                        helperObj.clickOnElement(homePageUi.fitness2, "clicked on Fitness category element");
+                        break;
+                        case "devices2":
+                        helperObj.jsScrollAtTheBottom();
+                        Thread.sleep(2000);
+                        helperObj.clickOnElement(homePageUi.devices2, "clicked on Devices category element");
+                        break;
+                        case "personalcare2":
+                        helperObj.jsScrollAtTheBottom();
+                        Thread.sleep(2000);
+                        helperObj.clickOnElement(homePageUi.personalCare2, "clicked on PersonalCare category element");
+                        break;
+                        case "ayurveda2":
+                        helperObj.jsScrollAtTheBottom();
+                        Thread.sleep(2000);
+                        helperObj.clickOnElement(homePageUi.ayurveda2, "clicked on Ayurveda category element");
+                        break;
+                        case "homeopathy2":
+                        helperObj.jsScrollAtTheBottom();
+                        Thread.sleep(2000);
+                        helperObj.clickOnElement(homePageUi.homeopathy2, "clicked on Homeopathy category element");
+                        break;
+                        case "treatments2":
+                        helperObj.jsScrollAtTheBottom();
+                        Thread.sleep(2000);
+                        helperObj.clickOnElement(homePageUi.treatments2, "clicked on Treatments2 category element");
+                        break;
+                        case "sexualwellness2":
+                        helperObj.jsScrollAtTheBottom();
+                        Thread.sleep(2000);
+                        helperObj.clickOnElement(homePageUi.sexualWellness2, "clicked on SexualWellness category element");
+                        break;
+                        case "surgicals2":
+                        helperObj.jsScrollAtTheBottom();
+                        Thread.sleep(2000);
+                        helperObj.clickOnElement(homePageUi.Surgicals2, "clicked on Surgicals category element");
+                        break;
+                    default:
+                    System.err.println("Product categories testing is failed");
+                        break;
+                }
+                break;
+                case "socialmedia":
+                switch (subEle.toLowerCase()) {
+                    case "patientsalike":
+                    helperObj.jsScrollByIndex(2500);
+                    Thread.sleep(2000);
+                    helperObj.clickOnElement(homePageUi.patientsAlike, "clicked on Patients Alike category element");
+                    helperObj.switchToNewWindow("patientsalike");
+                    break;
+                        case "facebook":
+                        helperObj.jsScrollAtTheBottom();
+                        Thread.sleep(2000);
+                        helperObj.clickOnElement(homePageUi.facebook, "clicked on Facebook category element");
+                        helperObj.switchToNewWindow("facebook");
+                        break;
+                        case "twitter":
+                        helperObj.jsScrollAtTheBottom();
+                        Thread.sleep(2000);
+                        helperObj.clickOnElement(homePageUi.twitter, "clicked on Twitter category element");
+                        helperObj.switchToNewWindow("twitter");
+                        break;
+                        case "linkedin":
+                        helperObj.jsScrollAtTheBottom();
+                        Thread.sleep(2000);
+                        helperObj.clickOnElement(homePageUi.linkedIn, "clicked on LinkedIn category element");
+                        helperObj.switchToNewWindow("linkedin");
+                        break;
+                        case "youtube":
+                        helperObj.jsScrollAtTheBottom();
+                        Thread.sleep(2000);
+                        helperObj.clickOnElement(homePageUi.youtube, "clicked on Youtube category element");
+                        helperObj.switchToNewWindow("youtube");
+                        break;
+                        case "instagram":
+                        helperObj.jsScrollAtTheBottom();
+                        Thread.sleep(2000);
+                        helperObj.clickOnElement(homePageUi.instagram, "clicked on Instagram category element");
+                        helperObj.switchToNewWindow("instagram");
+                        break;
+                        case "referearn":
+                        helperObj.jsScrollAtTheBottom();
+                        Thread.sleep(2000);
+                        helperObj.clickOnElement(homePageUi.ReferEarn, "clicked on Refer & Earn category element");
+                        helperObj.switchToNewWindow("referearn");
+                        break;
+                    default:
+                    System.err.println("SocialMedia module testing is failed");
+                        break;
+                }
+                break;
+            default:
+            System.out.println("Elements of footer module Testing is failed");
+                break;
+        }
+    }
+
 }

@@ -107,6 +107,22 @@ public class WebDriverHelper {
         }
     }
 
+    public void switchToPreviousWindow() {
+        try {
+            // Switch back to the previous window
+            String mainWindowHandle = driver.getWindowHandles().iterator().next();
+            driver.switchTo().window(mainWindowHandle);
+            // ExtentReporter.pass("Switched back to the previous window: " + previousWindowHandle);
+            // LoggerHandler.info("Switched back to the previous window: " + previousWindowHandle);
+        } catch (Exception e) {
+            e.printStackTrace();
+            // ExtentReporter.fail(driver, "Failed to switch back to the previous window: " + previousWindowHandle);
+            // LoggerHandler.error("Failed to switch back to the previous window: " + previousWindowHandle);
+        }
+    }
+    
+    
+
     public void PressEnter(By locator, String msg){
         try {
             webElement = driver.findElement(locator);
@@ -360,6 +376,11 @@ public class WebDriverHelper {
     public void jsScrollAtTheTop(){
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollTo(0, 0);");
+    }
+
+    public void jsScrollAtTheBottom(){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollTo(0, document.body.scrollHeight);");
     }
 
     public void getLocationOfWebElement(By locator){
